@@ -6,7 +6,7 @@ RUN conda create -n Bodo python=3.8 && \
 
 RUN git clone https://github.com/Bodo-inc/Bodo-examples
 
-RUN conda install ipyparallel scipy -y -n Bodo -c conda-forge
+RUN conda install ipyparallel scipy h5py -y -n Bodo -c conda-forge
 
 RUN conda run -n Bodo pip install snowflake-sqlalchemy tabpy
 
